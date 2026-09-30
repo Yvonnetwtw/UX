@@ -1,3 +1,0 @@
-const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
-function svg(s,box){return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${box}" aria-hidden="true">${s.items.map(i=>`<g transform="translate(${i.tx||0} ${i.ty||0}) scale(${i.scale||1})"><${i.type} ${Object.entries(i.a).map(([k,v])=>`${k}="${esc(v)}"`).join(' ')}>${i.type==='text'?esc(i.text):''}</${i.type}></g>`).join('')}</svg>`;}
-const pictures={};originalUnits.forEach(u=>{const s=u.screens[3];s.items.filter(i=>i.type==='text'&&/^[ABC]  /.test(i.text)).forEach((i,k)=>pictures[i.text.slice(3).trim()]=svg(s,`34 ${324+k*126} 102 108`));});
