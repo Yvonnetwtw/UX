@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>節慶聽說配對｜v6</title><meta name="description" content="認識24種臺灣節日活動與習俗，練習聽圖配對、情境理解與句子重組。"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%24b63227'/%3E%3Ctext x='20' y='29' text-anchor='middle' font-size='28' fill='white'%3E春%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="brand"><span class="brand-icon">春</span><div><strong>臺灣節慶・一起學</strong><small>看圖・開口說・聽一聽</small></div></div><nav aria-label="主要導覽"><button id="learnTab" class="tab active" aria-pressed="true">A 節慶認識</button><button id="gameTab" class="tab" aria-pressed="false">B 遊戲式學習</button><button id="recordsTab" class="tab" aria-pressed="false">C 學習記錄</button></nav></header>
+<main>
+<section id="entryView">
+<p class="eyebrow">A 節慶認識</p><h1>今天，想從哪裡開始？</h1><p class="entry-intro">先選節日，或先選一個你想認識的活動。</p>
+<div class="entry-options">
+<article class="entry-option festival-entry"><div class="entry-label"><span>01</span><p>從節日出發<small lang="en">Explore by festival</small></p></div><h2>這個節日做什麼？</h2><p>選一個節日，看看大家會做什麼。</p><div class="route-example"><strong>春節</strong><span>↓</span><div id="entryExamples" class="example-cards"></div></div><div class="entry-footer"><span>10 個節日 · 圖片與配音</span><button id="openFestivals" class="primary">選節日 →</button></div></article>
+<article class="entry-option activity-entry"><div class="entry-label"><span>02</span><p>從活動出發<small lang="en">Explore by activity</small></p></div><h2>哪些節日會做這個活動？</h2><p>選一張活動卡，找出相關的節日。</p><div class="category-entries"><button data-category="0" class="orange">相聚與心意 <span>7 張 →</span></button><button data-category="1" class="yellow">節日食物 <span>5 張 →</span></button><button data-category="2" class="green">節日活動 <span>7 張 →</span></button><button data-category="3" class="purple">祭祀與祝願 <span>5 張 →</span></button></div><div class="reverse-example"><strong>吃湯圓</strong><span>→</span><span>元宵節</span><span>冬至</span></div><div class="entry-footer"><span>24 張圖卡 · 4 種分類色</span><button id="openActivities" class="activity-primary">選活動 →</button></div></article>
+</div></section>
+<section id="festivalView" hidden><button class="back-entry">← A 節慶認識</button><p class="eyebrow">01 · 從節日出發</p><h1>這個節日做什麼？</h1><div class="festival-layout"><aside id="festivalChoices" aria-label="選擇節日"></aside><div><div id="festivalIntro" class="festival-intro"></div><p>點圖片聽聲音，也可以錄下你的說法。</p><div id="festivalActivities" class="festival-activities"></div></div></div></section>
+<section id="learnView" hidden>
+<button class="back-entry">← A 節慶認識</button>
+<div class="section-head"><div><p class="eyebrow">02 · 從活動出發</p><h1>哪些節日會做這個活動？</h1><p>選活動、聽聲音，再看看哪些節日會做。<span lang="en">Choose an activity. Discover its festivals.</span></p></div><button id="goGame" class="primary">來玩春節挑戰 →</button></div>
+<div class="learn-note"><span>🎙</span><div><strong>先聽，再說，再玩</strong><p>點「錄音」→ 開始錄音 → 說出活動 → 停止並儲存。錄音只保存在這台裝置的這個瀏覽器，未錄音的卡使用示範朗讀。</p></div><span id="recordCount" class="counter">已錄音 0 / 24</span></div>
+<div class="legend category-filters" aria-label="圖卡分類"><button data-filter="all" aria-pressed="true">全部 24 張</button><button data-filter="0" class="orange" aria-pressed="false">相聚與心意 · 7</button><button data-filter="1" class="yellow" aria-pressed="false">節日食物 · 5</button><button data-filter="2" class="green" aria-pressed="false">節日活動 · 7</button><button data-filter="3" class="purple" aria-pressed="false">祭祀與祝願 · 5</button></div>
+<div class="activity-guide"><div><h2 id="categoryTitle">全部活動與習俗</h2><p id="categoryExplanation">同一種活動，可能出現在不同節日。</p></div><span id="categoryCount">24 張圖卡</span></div>
+<p class="activity-steps">① 選顏色分類　→　② 找一張活動卡　→　③ 點「看相關節日」</p>
+<div id="library" class="library"></div>
+</section>
+<section id="gameView" hidden>
+<div class="festival-strip" aria-label="節日單元"><span class="current">01 春節</span><span>02 元宵節</span><span>03 兒童節</span><span>04 清明節</span><span>05 端午節</span><span>06 七夕</span><span>07 中元節</span><span>08 中秋節</span><span>09 教師節</span><span>10 冬至</span></div>
+<p class="strip-note">先試玩 01 春節，其餘單元尚未開放。</p>
+<div class="game-top"><div class="scenario"><p class="eyebrow">01 · 春節 / Lunar New Year</p><h1>一起準備過春節！</h1><p>朋友邀你一起過年。聽聽看，他想做什麼？<br>從 24 張圖卡找出本回合指定的三項活動，集滿就蓋章。</p><div class="game-actions"><button id="startGame" class="primary">▶ 開始挑戰</button><button id="replay" disabled>🔊 再聽一次</button><button id="hint" disabled>看文字提示</button></div><p id="prompt" class="prompt">準備好了嗎？先按「開始挑戰」。</p></div><aside class="passport"><div class="passport-top"><strong>我的春節集點卡</strong><span id="points">0 點</span></div><div id="slots" class="slots"><span>1</span><span>2</span><span>3</span></div><div id="stamp" class="stamp"><span>春</span><small>集滿三張蓋章</small></div><p id="progress">已收集 0 / 3</p></aside></div>
+<div class="board-head"><h2>聽聲音，找圖片</h2><label><input id="showWords" type="checkbox"> 顯示文字</label><button id="shuffle">↻ 洗牌</button></div>
+<p class="game-rule">每張正確圖卡得 1 點；重複點選不加分。其他卡不代表不能用於春節，只是這回合的目標不同。</p>
+<div id="board" class="board"></div>
+</section>
+<section id="recordsView" hidden><p class="eyebrow">C 學習記錄</p><h1>我的學習成果</h1><p>錄音保存在這個瀏覽器；下方遊戲進度為本次開啟網頁的記錄。</p><div id="recordSummary" class="record-summary"></div></section>
+<p id="status" class="status" role="status" aria-live="polite"></p>
+</main>
+<dialog id="recDialog" aria-labelledby="recTitle"><button id="closeRec" class="close" aria-label="關閉錄音">×</button><p class="eyebrow">我的聲音 / My voice</p><h2 id="recTitle"></h2><p id="recEnglish"></p><p>說出卡片上的活動名稱，也可以說一句短句。</p><p id="recStatus" role="status">每次最多 20 秒。</p><div class="record-actions"><button id="record" class="primary">● 開始錄音</button><button id="stopRecord" disabled>■ 停止並儲存</button><button id="listenRecord">▶ 聽我的錄音</button></div><p class="small">需要允許麥克風。錄音不會上傳；重新錄音會取代這張卡原本的錄音。</p></dialog>
+<dialog id="relatedDialog" aria-labelledby="relatedTitle"><button id="closeRelated" class="close" aria-label="關閉">×</button><p class="eyebrow">A－02 · 從活動找節日</p><div class="related-overview"><div id="relatedPicture"></div><div><h2 id="relatedTitle"></h2><p id="relatedEnglish"></p><button id="relatedListen">🔊 聽活動名稱</button></div></div><h3>哪些節日會做這個活動？</h3><div id="relatedFestivals"></div><p class="related-speaking" id="relatedSentence"></p><button id="relatedRecord">🎙 換我說・錄音</button><p class="small">點節日可看介紹。這些是教材選用的例子；各家庭做法可能不同，也可能出現在其他節日。</p></dialog>
+<script src="app.js"></script><script src="entry.js"></script><script src="games.js"></script><script src="memory-game.js"></script><script src="records.js"></script><link rel="stylesheet" href="entry.css"><link rel="stylesheet" href="games.css"><link rel="stylesheet" href="memory-game.css"><link rel="stylesheet" href="records.css"></body></html>
+
